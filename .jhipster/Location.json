@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20230509150147",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "location",
+  "fields": [
+    {
+      "fieldName": "streetAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Location",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "company",
+      "ownerSide": true,
+      "relationshipName": "company",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "no"
+}

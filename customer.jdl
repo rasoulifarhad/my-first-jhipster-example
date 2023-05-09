@@ -1,0 +1,31 @@
+entity Company {
+	companyName String required
+}
+
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String
+}
+
+entity Customer {
+	customerName String required
+}
+
+entity Address {
+	streetAddress String,
+	postalCode String,
+	city String
+}
+
+relationship OneToOne {
+	Location{company} to Company
+}
+
+relationship OneToMany {
+	Company to Customer{company}
+}
+
+relationship OneToOne {
+	Address{customer} to Customer
+}
